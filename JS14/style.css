@@ -1,0 +1,72 @@
+/**/
+body{
+    overflow: hidden;/*скрывает содержимое, выходящее за пределы контейнера*/
+    background: linear-gradient(#f4f4ed, white);/*градиентная заливка фона*/
+  }
+  
+ /*настройка выравнивания тела и кнопок калькулятора*/
+  .container{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;/*определяет вертикальное выравнивание всех дочерних элементов по центру родительского*/
+    justify-content: center;/*определяет горизонтальное выравнивание всех дочерних элементов по центру родительского*/
+  }
+
+   /*стилизация задней понели калькулятора*/
+  .calculator{
+    width: 370px;
+    margin: auto;
+    border-radius: 2px;
+    background:  #f2f2f2;
+    padding: 15px 15px 20px 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  /*стилизация"экрана"*/
+  #user_input{
+    box-sizing: border-box;/*все элементы в HTML не будут добавлять внутренние отступы и границы к итоговой ширине*/
+    width: 100%;
+    padding: 40px 5px;
+    background: whitesmoke;
+    text-align: right;
+    direction: ltr;/*задает направление написания текста для языков с написание текста справа налево*/
+    outline: none;
+    border: none;
+    font-size: 2rem;
+  }
+  
+  /*стилизация кнопок с цифрами*/
+  .btn{
+    width: 24%;
+    height: 45px;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background: whitesmoke;
+  }
+  
+  /*стилизация кнопки =*/
+  .btnEqual{
+    width: 99.2%;
+    height: 45px;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background: whitesmoke;
+  }
+  
+  /*анимация изменения при наведении*/
+  .btn:hover, .btnEqual:hover{background-color: rgba(128, 128, 128, 0.1);}
+  
+  /* для одаптации под разные устройства*/
+  @media(max-width:480px){
+    .btn{width: 23.4%;}
+  }
+  @media(max-width:320px){
+    .btn{width: 23%;}
+  }
+  

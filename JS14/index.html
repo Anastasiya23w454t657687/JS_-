@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--ссылка на какуюто картинку логатипа которой у меня нет -->
+  <link rel="shortcut icon" type="image/png" href="calculator.png" />
+  <!--подключение файла ccs -->
+  <link rel="stylesheet" href="style.css">
+  <!--заголовок вкладки -->
+  <title>Calculator</title>
+</head>
+<body>
+  <!--создание концоли(набор цифр и управляющих элементов) -->
+  <!--на всх кнопках висит метод click с соответствующей функцией-->
+  <div class="container">
+    <div class="calculator">
+      <!--"экран" куда отображается ползователбский ввод по умолчанию стоит 0 -->
+      <!--также сюда отобразится результат -->
+      <input id="user_input" placeholder="0">
+      <!--первый ряд кнопок 1, 2, 3 и + -->
+      <br>
+      <button class="btn" onclick="press(1)">1</button>
+      <button class="btn" onclick="press(2)">2</button>
+      <button class="btn" onclick="press(3)">3</button>
+      <!--к кнопке + добавлена стилизация-->
+      <button style="background:#ffb84d;" class="btn" onclick="press('+')">+</button>
+      <!--второй ряд кнопок 4, 5, 6 и -  -->
+      <br>
+      <button class="btn" onclick="press(4)">4</button>
+      <button class="btn" onclick="press(5)">5</button>
+      <button class="btn" onclick="press(6)">6</button>
+      <!--к кнопке - добавлена стилизацияи-->
+      <button style="background: #ffcc80;" class="btn" onclick="press('-')">-</button>
+      <!--третий ряд кнопок 7, 8, 9 и * -->
+      <br>
+      <button class="btn" onclick="press(7)">7</button>
+      <button class="btn" onclick="press(8)">8</button>
+      <button class="btn" onclick="press(9)">9</button>
+      <!--к кнопке * добавлена стилизация-->
+      <button style="background: #ffe0b3;" class="btn" onclick="press('*')">*</button>
+      <!--кнопки ., 0, с и / -->
+      <br>
+      <button class="btn" onclick="press('.')">.</button>
+      <button class="btn" onclick="press(0)">0</button>
+      <button class="btn" onclick="erase()">C</button>
+      <!--к кнопке / добавлена стилизация-->
+      <button style="background: #fff5e6;" class="btn" onclick="press('/')">/</button>
+      <!--кнопка =-->
+      <br>
+      <button class="btnEqual" onclick="equal()">=</button>
+    </div>
+  </div>
+  <!--соединение файла html и js--> 
+  <script src="script.js"></script>
+</body>
+</html>
