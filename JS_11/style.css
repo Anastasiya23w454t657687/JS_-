@@ -1,0 +1,18 @@
+
+li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 50px 50px;
+    margin: 10px;
+    background: #181AFF;
+    position: relative;
+}
+
+
+  
+  .item.opacity-toggle {
+    background: #000000;
+  }
+
+  .item.pup{
+   background: rgba(255, 0, 0, 0);}
